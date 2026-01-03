@@ -1,274 +1,144 @@
+/* ===== Reset ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Azeret Mono", monospace;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: "Azeret Mono", monospace;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f4;
 }
-header{
 
-}
+/* ===== Navbar ===== */
 .navbar {
-    width: 1140px;
-    margin: 0 auto;
-    /* padding: 80px 97px 80px 97px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    
-    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .button {
-    /* Frame 2 */
-width: 244px;
-height: 57px;
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 10;
-padding: 17px 24px 17px 24px;
-
-box-sizing: border-box;
-border: 1px solid rgba(13, 19, 33, 1);
-border-radius: 8px;
-opacity: 0.8;
-
+  padding: 14px 24px;
+  border: 1px solid rgba(13, 19, 33, 1);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-.button:hover {
-    background: white;
-    color: #667eea;
-    transform: translateY(-2px);
-}
-
+/* ===== Hero Section ===== */
 .hero-section {
-    /* height: 100vh; */
-    background-image: url(asset/Hero-bg.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    
-}
-
-.hero-section::before {
-    /* content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1; */
+  background-image: url(asset/Hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
 }
 
 .hero-section > div {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+  justify-items: center;
 }
 
 .hero-section img {
-    width: 200px;
-    height: 200px;
-    
-    margin-bottom: 20px;
-    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
-}
-
-.hero-text {
-    max-width: 800px;
+  width: 200px;
 }
 
 .future {
- /* "In the near future, I hope to become a Developer." */
-width: 998px;
-height: 136px;
-color: rgba(13, 19, 33, 1);
-
-font-family: Azeret Mono;
-font-style: ExtraBold;
-font-size: 48px;
-font-weight: 800;
-line-height: 68px;
-letter-spacing: 0%;
-text-align: center;
-margin-bottom: 20px;
-
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.4;
 }
 
 .hero-para {
-    width: 852px;
-    height: 52px;
-    opacity: 0.7;
-    color: rgba(13, 19, 33, 1);
-
-    font-family: Azeret Mono;
-    font-style: Regular;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-bottom: 40px;
+  max-width: 850px;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
 }
 
 .button1 {
-  /* Contact with me */
-/* Frame 2 */
-width: 244px;
-height: 65px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(13, 19, 33, 1);
-    color: white;
-    font-family: 'Azeret Mono', monospace;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 60px;
-    
+  margin-top: 24px;
+  padding: 14px 32px;
+  background: rgba(13, 19, 33, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.button1:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(16, 16, 16, 0.6);
-}
-
-
-.why{
-    width: 852px;
-    height: 37px;
-    color: rgba(13, 19, 33, 1);
-
-    font-family: Azeret Mono;
-    font-style: ExtraBold;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 37px;
-    letter-spacing: 0%;
-    text-align: center;"
-}
-.p2{
-    /* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. */
-width: 852px;
-height: 52px;
-opacity: 0.7;
-color: rgba(13, 19, 33, 1);
-
-font-family: Azeret Mono;
-font-style: Regular;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: center;
-margin-top: 20px;
-margin-bottom: 70px;
-}
-/* ------section 2----- */
+/* ===== Why Web Section ===== */
 .why-web {
-   
   padding: 80px 0;
-  background: rgba(13, 19, 33, 0.02);
-  margin-top: 70px;
+  
 }
-
+.container-m{
+max-width: 1140px;
+  margin: 0 auto;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 80px 97px 80px 97px;
+  padding: 80px 97px;
   border-radius: 16px;
   background: rgba(13, 19, 33, 0.02);
 }
 
-
-
-/* Why Web Development?? */
-.section-header{
-
-    /* Frame 5 */
-width: 852px;
-height: 113px;
-/* Auto layout */
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-gap: 24;
-margin-top: 50px;
-margin-bottom: 70px;
-
-
-}
-.section-header h2{
-color: rgba(13, 19, 33, 1);
-font-family: Azeret Mono;
-font-style: ExtraBold;
-font-size: 32px;
-font-weight: 800;
-line-height: 37px;
-letter-spacing: 0%;
-text-align: center;
-margin-bottom: 10px;
-}
-.section-header p{
-opacity: 0.7;
-color: rgba(13, 19, 33, 1);
-
-font-family: Azeret Mono;
-font-style: Regular;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0%;
-text-align: center;
-/* margin-top: 20px; */
-margin-bottom: 40px;
-/* /* Why Web Development End */
+/* Section Header */
+.section-header {
+  max-width: 852px;
+  margin: 0 auto 70px;
+  text-align: center;
 }
 
-/* I will Do Coding and Change The World */
-.card{
-    /* Frame 8 */
-width: 946px;
-height: 336px;
-
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: flex-start;
-gap: 32;
-padding: 48px;
-margin-bottom: 32px;
-
-border-radius: 16px;
-background: linear-gradient(90.00deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0) 100%);
-
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 37px;
+  margin-bottom: 16px;
+  color: rgba(13, 19, 33, 1);
 }
 
+.section-header p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+/* Cards Wrapper */
+.cards {
+  display: grid;
+  gap: 32px;
+}
+
+/* Card */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+  padding: 48px;
+  border-radius: 16px;
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* Reverse Card */
 .card.reverse {
   grid-template-columns: 300px 1fr;
   background: linear-gradient(
@@ -277,87 +147,444 @@ background: linear-gradient(90.00deg, rgba(255, 255, 255, 1),rgba(255, 255, 255,
     rgba(255, 255, 255, 0)
   );
 }
-.cards {
-  display: grid;
-  gap: 32px;
+
+/* Card Content */
+.card-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 16px;
+  color: rgba(13, 19, 33, 0.7);
+}
+
+.card-content p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+/* Card Image */
+.card-image img,
+.card-image1 img {
+  width: 100%;
+  display: block;
+}
+
+/* Button (Cards) */
+.btn {
+  margin-top: 32px;
+  padding: 12px 20px;
+  border: 1px solid rgba(13, 19, 33, 1);
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* My Inspiration / Future Goals Section */
+
+.future-goals{
+  padding: 80px 0;
+}
+
+/* Container */
+.container2 {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Header */
+.my-goals {
+  max-width: 852px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.my-goals h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 37px;
+}
+
+.my-goals p {
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+  margin-top: 16px;
+}
+
+/* Video Box */
+.video-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+  border-radius: 16px;
+}
+
+/* Responsive Video */
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 16px;
+}
+
+/* My Current Target */
+
+.My-Target{
+  padding: 80px 0;
+
+}
+.Current{
+  max-width: 1140px;
+  margin: 0 auto;
+  
+}
+.html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Target{
+  /* Frame 5 */
+margin-bottom: 50px;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24;
+
+}
+.Target h2{
+  color: rgba(13, 19, 33, 1);
+font-family: Azeret Mono;
+font-style: ExtraBold;
+font-size: 32px;
+font-weight: 800;
+line-height: 37px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 15px;
+
+
+}
+.Target p {
+  opacity: 0.7;
+color: rgba(13, 19, 33, 1);
+font-family: Azeret Mono;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.crd-html{
+  /* Frame 10 */
+width: 364px;
+height: 299px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+text-align: center;
+gap: 32;
+padding: 20px;
+margin: 10px;
+
+border-radius: 16px;
+background: rgba(255, 76, 30, 0.05);
+}
+.crd-html h3{
+  /* HTML */
+width: 284px;
+color: rgba(13, 19, 33, 1);
+
+font-family: Azeret Mono;
+font-style: ExtraBold;
+font-size: 24px;
+font-weight: 800;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: left;
+
+}
+.crd-html p{
+  /* Lorem Ipsum is simply dummy text of the printing. */
+width: 284px;
+opacity: 0.7;
+color: rgba(13, 19, 33, 1);
+
+font-family: Azeret Mono;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.crd-html img {
+  margin-bottom: 20px;
+}
+.crd-html a{
+margin-top: 20px;
+}
+.css{
+ background: rgba(0, 76, 232, 0.05);
+}
+
+.js{
+  background: rgba(255, 223, 0, 0.05);
+}
+
+/* ===== My Next Target Section ===== */
+
+.card-container {
+    display: flex;
+    flex-direction: column; 
+    
+    gap: 20px; 
+    width: 1140px;
+    padding: 20px;
+    text-align: center; 
+}
+.MyNextTarget{
+/* Frame 5 */
+width: 852px;
+/* height: 113px; */
+/* Auto layout */
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 24;
+
+
+}
+.MyNextTarget h1 {
+ color: rgba(13, 19, 33, 1);
+margin-bottom: 16px;
+font-family: Azeret Mono;
+font-style: ExtraBold;
+font-size: 32px;
+font-weight: 800;
+line-height: 37px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.description {
+    opacity: 0.7;
+color: rgba(13, 19, 33, 1);
+
+font-family: Azeret Mono;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 24px;
+}
+
+.card-p {
+    background-color: #fff;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.2s;
+    text-align: left;  */
+   
+
+
+
+    width: 1140px;
+    height: 219px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-logo {
+    width: 80px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.card p {
+    margin: 0 0 15px 0;
+    color: #666;
+    line-height: 1.4;
+}
+
+.learn-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
 }
 
 
-.card-content{
-    /* Frame 9 */
-width: 477px;
-height: 219px;
+
+.support-container {
+    background: url('asset/handshake.jpg') no-repeat center center/cover; 
+    /* Frame 8 */
+width: 1140px;
+height: 313px;
 /* Auto layout */
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
 gap: 32;
- 
+padding: 64px 48px 64px 48px;
+margin-bottom: 48px;
+
+border-radius: 16px;
+background: url(Email),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2);
+}
+
+form{
+  display: flex;
+  margin-top: 48px;
+}
+
+
+.form-box {
+    
+    /* Frame 6 */
+width: 730px;
+height: 104px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16;
+margin-top: 24px;
 
 }
-.card-image{
-/* Layer_1 */
-width: 274.17px;
-height: 240px;
-margin-right: auto;
-}
-.card-image1{
-    /* Layer_1 */
-width: 274.17px;
-height: 240px;
-margin-left: auto;
-}
-.card-content h3{
-    /* I will Do Coding and Change The World */
-color: rgba(13, 19, 33, 0.7);
+
+.form-box h2 {
+  color: rgba(255, 255, 255, 1);
 
 font-family: Azeret Mono;
 font-style: Bold;
-font-size: 24px;
+font-size: 32px;
 font-weight: 700;
 line-height: 36px;
 letter-spacing: 0%;
-text-align: left;
-margin-bottom: 15px;
-
+text-align: center;
+   
 }
-.card-content p{
-    color: rgba(13, 19, 33, 1);
-    font-family: Azeret Mono;
-    font-style: Regular;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0%;
-    text-align: left;
-    opacity: 0.7;
-    
 
+.form-box p {
+  opacity: 0.7;
+color: rgba(255, 255, 255, 1);
 
+font-family: Azeret Mono;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
 }
-.btn{
-    /* Frame 7 */
-width: 171px;
-height: 47px;
+
+.Suggest{
+  /* Frame 7 */
+width: 548px;
+height: 57px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+gap: 10;
+padding: 19px 20px 19px 20px;
+
+box-sizing: border-box;
+border: 1px solid rgba(13, 19, 33, 0.15);
+border-radius: 8px;
+background: rgba(255, 255, 255, 1);
+}
+.form-box button {
+   /* Frame 8 */
+width: 120px;
+height: 57px;
 /* Auto layout */
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 gap: 10;
-padding: 12px 20px 12px 20px;
-margin-top: 32px;
-
-box-sizing: border-box;
-border: 1px solid rgba(13, 19, 33, 1);
-opacity: 0.7;
-
-
+padding: 17px 20px 17px 20px;
+border: none;
+border-radius: 8px;
+background: rgba(255, 255, 255, 1);
+margin-left: 10px;
 }
 
-.cards{
-    margin-top: 48px;
+.form-box button:hover {
+    background-color: #0056b3;
 }
-    
 
+.footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  max-width: 1140px;   /* ⚠️ hero section এর width এর সাথে same */
+  margin: 0 auto;
+  padding: 16px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;              /* px issue killer */
+  font-size: 14px;
+  line-height: 1;         /* baseline fix */
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  display: block;         /* inline image gap remove */
+}
