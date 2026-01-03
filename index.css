@@ -10,15 +10,19 @@ body {
     color: #333;
     line-height: 1.6;
 }
+header{
 
+}
 .navbar {
+    width: 1140px;
+    margin: 0 auto;
+    /* padding: 80px 97px 80px 97px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar h2 {
@@ -52,7 +56,7 @@ opacity: 0.8;
 }
 
 .hero-section {
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(asset/Hero-bg.png);
     background-size: cover;
     background-position: center;
@@ -186,20 +190,22 @@ margin-bottom: 70px;
 }
 /* ------section 2----- */
 .why-web {
-    /* Frame 13 */
-width: 1140px;
-height: 1393px;
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-gap: 10;
-padding: 80px 97px 80px 97px;
-
-border-radius: 16px;
-background: rgba(13, 19, 33, 0.02);
+   
+  padding: 80px 0;
+  background: rgba(13, 19, 33, 0.02);
+  margin-top: 70px;
 }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 80px 97px 80px 97px;
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.02);
+}
+
+
+
 /* Why Web Development?? */
 .section-header{
 
@@ -212,6 +218,8 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 gap: 24;
+margin-top: 50px;
+margin-bottom: 70px;
 
 
 }
@@ -239,7 +247,117 @@ letter-spacing: 0%;
 text-align: center;
 /* margin-top: 20px; */
 margin-bottom: 40px;
-}
 /* /* Why Web Development End */
+}
 
+/* I will Do Coding and Change The World */
+.card{
+    /* Frame 8 */
+width: 946px;
+height: 336px;
+
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 32;
+padding: 48px;
+margin-bottom: 32px;
+
+border-radius: 16px;
+background: linear-gradient(90.00deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0) 100%);
+
+}
+
+.card.reverse {
+  grid-template-columns: 300px 1fr;
+  background: linear-gradient(
+    to left,
+    #ffffff,
+    rgba(255, 255, 255, 0)
+  );
+}
+.cards {
+  display: grid;
+  gap: 32px;
+}
+
+
+.card-content{
+    /* Frame 9 */
+width: 477px;
+height: 219px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 32;
+ 
+
+}
+.card-image{
+/* Layer_1 */
+width: 274.17px;
+height: 240px;
+margin-right: auto;
+}
+.card-image1{
+    /* Layer_1 */
+width: 274.17px;
+height: 240px;
+margin-left: auto;
+}
+.card-content h3{
+    /* I will Do Coding and Change The World */
+color: rgba(13, 19, 33, 0.7);
+
+font-family: Azeret Mono;
+font-style: Bold;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 15px;
+
+}
+.card-content p{
+    color: rgba(13, 19, 33, 1);
+    font-family: Azeret Mono;
+    font-style: Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    opacity: 0.7;
+    
+
+
+}
+.btn{
+    /* Frame 7 */
+width: 171px;
+height: 47px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10;
+padding: 12px 20px 12px 20px;
+margin-top: 32px;
+
+box-sizing: border-box;
+border: 1px solid rgba(13, 19, 33, 1);
+opacity: 0.7;
+
+
+}
+
+.cards{
+    margin-top: 48px;
+}
+    
 
